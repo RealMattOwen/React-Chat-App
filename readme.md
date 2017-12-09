@@ -1,7 +1,3 @@
-# Git Commands
+# React Chat App
 
-git init - Create  new git repo
-git status - View the changes to your project code
-git add - Add files to staging area
-git commit - Creates a new commit with files from staging areea
-git log - View recent commits
+https://github.com/RealMattOwen/React-Chat-App
