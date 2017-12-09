@@ -1,0 +1,58 @@
+{
+  "name": "react-chat-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "browserslist": [
+    "> 1%",
+    "ie > 9"
+  ],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server",
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:prod"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "firebase": "^4.6.2",
+    "history": "^4.7.2",
+    "material-ui": "^0.19.4",
+    "moment": "^2.19.2",
+    "node-sass": "^4.7.2",
+    "normalize.css": "^7.0.0",
+    "numeral": "^2.0.6",
+    "postcss-loader": "^2.0.8",
+    "raf": "^3.4.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1",
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.12.1",
+    "react-test-renderer": "^16.1.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}

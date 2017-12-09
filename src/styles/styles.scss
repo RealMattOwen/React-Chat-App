@@ -1,0 +1,77 @@
+@import './base/settings';
+@import './base/base';
+@import './components/box-layout';
+@import './components/button';
+@import './components/header';
+@import './components/content-container';
+@import './components/page-header';
+@import './components/input-group';
+@import './components/inputs';
+@import './components/form';
+@import './components/visibility';
+@import './components/list';
+@import './components/loader';
+
+#message-box::-webkit-scrollbar {
+	width: 14px;
+	height: 14px;
+}
+
+#message-box::-webkit-scrollbar-thumb {
+	background-clip: padding-box;
+	background-color: rgba(0, 0, 0, .4);
+	border: 3px solid transparent;
+	border-radius: 7px;
+}
+
+#message-box::-webkit-scrollbar-track-piece {
+	background-clip: padding-box;
+	background-color: transparent;
+	border: 3px solid transparent;
+	border-radius: 7px;
+}
+
+#message-box::-webkit-scrollbar-thumb,
+#message-box::-webkit-scrollbar-track-piece {
+	visibility: hidden;
+}
+
+#message-box:hover:hover::-webkit-scrollbar-thumb,
+#message-box:hover:hover::-webkit-scrollbar-track-piece {
+	visibility: visible;
+}
+
+.messages::-webkit-scrollbar {
+	width: 14px;
+	height: 14px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+	background-clip: padding-box;
+	background-color: rgba(0, 0, 0, .4);
+	border: 3px solid transparent;
+	border-radius: 7px;
+}
+
+.messages::-webkit-scrollbar-track-piece {
+	background-clip: padding-box;
+	background-color: transparent;
+	border: 3px solid transparent;
+	border-radius: 7px;
+}
+
+.messages::-webkit-scrollbar-thumb,
+.messages::-webkit-scrollbar-track-piece {
+	visibility: hidden;
+}
+
+.messages:hover:hover::-webkit-scrollbar-thumb,
+.messages:hover:hover::-webkit-scrollbar-track-piece {
+	visibility: visible;
+}
+
+.snackbar {
+	button {
+		margin: 6px -16px 0 0 !important;
+	}
+}
